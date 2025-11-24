@@ -1,0 +1,53 @@
+[gd_scene load_steps=7 format=3 uid="uid://b6xt1pam4caki"]
+
+[ext_resource type="Script" uid="uid://2mjvciwoh30v" path="res://scenes/bird.gd" id="1_jmxwj"]
+[ext_resource type="Texture2D" uid="uid://bandnxyo7ug7i" path="res://plane.png" id="2_3po83"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_3po83"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_3po83")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_3po83"]
+radius = 7.8143
+height = 25.4959
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_hq4t0"]
+radius = 3.49986
+height = 8.4205
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_twsrt"]
+radius = 3.81871
+height = 7.63742
+
+[node name="Bird" type="CharacterBody2D"]
+scale = Vector2(2.055, 2.055)
+script = ExtResource("1_jmxwj")
+
+[node name="bird" type="AnimatedSprite2D" parent="."]
+position = Vector2(20.6192, -17)
+scale = Vector2(0.145296, 0.5)
+sprite_frames = SubResource("SpriteFrames_3po83")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(29.1655, 0.486618)
+rotation = -1.5708
+scale = Vector2(2.055, 2.055)
+shape = SubResource("CapsuleShape2D_3po83")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="."]
+position = Vector2(50.5766, 4.37956)
+scale = Vector2(2.055, 2.055)
+shape = SubResource("CapsuleShape2D_hq4t0")
+
+[node name="CollisionShape2D3" type="CollisionShape2D" parent="."]
+position = Vector2(30.1387, 14.7591)
+rotation = -1.55509
+scale = Vector2(2.055, 2.055)
+shape = SubResource("CapsuleShape2D_twsrt")
