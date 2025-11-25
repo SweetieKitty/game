@@ -10,8 +10,9 @@ const SCROLL_SPEED : int = 4
 var screen_size : Vector2i
 var ground_height : int
 var pipes : Array
-const PIPE_DELAY : int = 100
-const PIPE_RANGE : int = 200
+const PIPE_DELAY : int = 500
+const PIPE_RANGE : int = 300
+const PIPE_VERTICAL_OFFSET : int = 180
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
@@ -71,7 +72,9 @@ func _on_pipe_timer_timeout():
 func generate_pipes():
 	var pipe = pipe_scene.instantiate()
 	pipe.position.x = screen_size.x + PIPE_DELAY
-	pipe.position.y = (screen_size.y - ground_height) / 2  + randi_range(-PIPE_RANGE, PIPE_RANGE)
+	var base_center_y = (screen_size.y - ground_height) / 2
+	pipe.position.y = base_center_y + PIPE_VERTICAL_OFFSET + randi_range(-PIPE_RANGE, PIPE_RANGE)
+	
 	pipe.hit.connect(bird_hit)
 	pipe.scored.connect(scored)
 	add_child(pipe)
