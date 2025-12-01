@@ -42,9 +42,9 @@ alignment = 1
 
 [node name="Button" type="Button" parent="."]
 layout_mode = 0
-offset_left = 367.0
+offset_left = 357.0
 offset_top = 823.0
-offset_right = 433.0
+offset_right = 425.0
 offset_bottom = 854.0
 scale = Vector2(5.31828, 4.76255)
 text = "volume"
@@ -52,9 +52,9 @@ text = "volume"
 [node name="Button2" type="Button" parent="."]
 layout_mode = 0
 offset_left = 359.0
-offset_top = 1011.0
-offset_right = 404.0
-offset_bottom = 1042.0
+offset_top = 998.0
+offset_right = 406.0
+offset_bottom = 1032.0
 scale = Vector2(7.67851, 4.16469)
 text = "back"
 

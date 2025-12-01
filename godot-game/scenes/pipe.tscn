@@ -4,10 +4,10 @@
 [ext_resource type="Texture2D" uid="uid://q4fwn7vx4dr2" path="res://tt.png" id="3_8p0di"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_51tso"]
-size = Vector2(28, 291)
+size = Vector2(48.6983, 277.472)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_arpqm"]
-size = Vector2(228.5, 1077)
+size = Vector2(344.882, 1058.79)
 
 [node name="Pipe" type="Area2D" groups=["pipes"]]
 position = Vector2(367, 891)
@@ -17,27 +17,30 @@ script = ExtResource("1_i8p56")
 [node name="ScoreArea" type="Area2D" parent="."]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="ScoreArea"]
-position = Vector2(252, 42)
+position = Vector2(158.805, 48.626)
+scale = Vector2(1, 1)
 shape = SubResource("RectangleShape2D_51tso")
 
-[node name="Ttu2" type="Sprite2D" parent="."]
-position = Vector2(174, 560)
-rotation = -3.14159
-scale = Vector2(1.38115, -3.49451)
+[node name="Ttu3" type="Sprite2D" parent="."]
+position = Vector2(17.3491, -446.292)
+rotation = -6.28319
+scale = Vector2(2.11429, -3.49451)
 texture = ExtResource("3_8p0di")
 
-[node name="Ttu3" type="Sprite2D" parent="."]
-position = Vector2(151, -472)
-rotation = -6.28319
-scale = Vector2(1.38115, -3.49451)
+[node name="Ttu4" type="Sprite2D" parent="."]
+position = Vector2(36.8669, 549.174)
+rotation = -3.14159
+scale = Vector2(2.12279, -3.49451)
 texture = ExtResource("3_8p0di")
 
 [node name="CollisionShape2D4" type="CollisionShape2D" parent="."]
-position = Vector2(163.75, -651)
+position = Vector2(34.6982, -613.031)
+scale = Vector2(1, 0.999999)
 shape = SubResource("RectangleShape2D_arpqm")
 
 [node name="CollisionShape2D5" type="CollisionShape2D" parent="."]
-position = Vector2(159, 731)
+position = Vector2(17.383, 715.292)
+scale = Vector2(1, 0.999999)
 shape = SubResource("RectangleShape2D_arpqm")
 
 [connection signal="body_entered" from="." to="." method="_on_body_entered"]

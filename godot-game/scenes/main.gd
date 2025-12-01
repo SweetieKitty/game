@@ -13,8 +13,8 @@ const SCROLL_SPEED : int = 4
 var screen_size : Vector2i
 var ground_height : int
 var pipes : Array
-const PIPE_DELAY : int = 1100
-const PIPE_RANGE : int = 500
+const PIPE_DELAY : int = 700
+const PIPE_RANGE : int = 350
 const PIPE_VERTICAL_OFFSET : int = 500
 
 # Called when the node enters the scene tree for the first time.
