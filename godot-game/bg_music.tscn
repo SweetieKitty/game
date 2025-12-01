@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://b2sqytqe502n4"]
+
+[ext_resource type="AudioStream" uid="uid://dm683g8p2hw6m" path="res://music/I`m gonna fly some planes.MP3" id="1_p1osb"]
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D"]
+stream = ExtResource("1_p1osb")
+volume_db = -26.667
+autoplay = true

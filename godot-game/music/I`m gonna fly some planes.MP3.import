@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://dm683g8p2hw6m"
+path="res://.godot/imported/I`m gonna fly some planes.MP3-03fecc2344d8a090e3369ae0988108b8.mp3str"
+
+[deps]
+
+source_file="res://music/I`m gonna fly some planes.MP3"
+dest_files=["res://.godot/imported/I`m gonna fly some planes.MP3-03fecc2344d8a090e3369ae0988108b8.mp3str"]
+
+[params]
+
+loop=true
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

@@ -1,7 +1,8 @@
-[gd_scene load_steps=7 format=3 uid="uid://b6xt1pam4caki"]
+[gd_scene load_steps=8 format=3 uid="uid://b6xt1pam4caki"]
 
 [ext_resource type="Script" uid="uid://2mjvciwoh30v" path="res://scenes/bird.gd" id="1_jmxwj"]
 [ext_resource type="Texture2D" uid="uid://bandnxyo7ug7i" path="res://plane.png" id="2_3po83"]
+[ext_resource type="AudioStream" uid="uid://b7lqsr4w0jhta" path="res://music/1201 (2).MP3" id="3_hq4t0"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_3po83"]
 animations = [{
@@ -51,3 +52,6 @@ position = Vector2(30.1387, 14.7591)
 rotation = -1.55509
 scale = Vector2(2.055, 2.055)
 shape = SubResource("CapsuleShape2D_twsrt")
+
+[node name="sfx_jump" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("3_hq4t0")

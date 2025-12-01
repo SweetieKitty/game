@@ -1,0 +1,61 @@
+[gd_scene load_steps=3 format=3 uid="uid://cklt3765il0hy"]
+
+[ext_resource type="Script" uid="uid://cgssx77j5rujp" path="res://scenes/options_menu.gd" id="1_ijpji"]
+[ext_resource type="Texture2D" uid="uid://cyp2rxsf35oej" path="res://IMG_5607.PNG" id="2_dhn0l"]
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchor_top = 0.002
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 3.0
+offset_top = -0.84
+offset_right = 5.0
+offset_bottom = -2.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_ijpji")
+
+[node name="Img5607" type="Sprite2D" parent="."]
+position = Vector2(546, 954)
+scale = Vector2(1.00741, 1.00625)
+texture = ExtResource("2_dhn0l")
+
+[node name="MarginContainer" type="MarginContainer" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.226
+anchor_top = 0.422
+anchor_right = 0.827
+anchor_bottom = 0.591
+offset_left = 88.468
+offset_top = -1.12994
+offset_right = 902.186
+offset_bottom = 964.235
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(0.292, 0.267)
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer"]
+layout_mode = 2
+alignment = 1
+
+[node name="Button" type="Button" parent="."]
+layout_mode = 0
+offset_left = 367.0
+offset_top = 823.0
+offset_right = 433.0
+offset_bottom = 854.0
+scale = Vector2(5.31828, 4.76255)
+text = "volume"
+
+[node name="Button2" type="Button" parent="."]
+layout_mode = 0
+offset_left = 359.0
+offset_top = 1011.0
+offset_right = 404.0
+offset_bottom = 1042.0
+scale = Vector2(7.67851, 4.16469)
+text = "back"
+
+[connection signal="pressed" from="Button2" to="." method="_on_button_2_pressed"]

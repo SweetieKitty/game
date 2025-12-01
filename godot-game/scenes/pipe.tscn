@@ -10,6 +10,8 @@ size = Vector2(28, 291)
 size = Vector2(228.5, 1077)
 
 [node name="Pipe" type="Area2D" groups=["pipes"]]
+position = Vector2(367, 891)
+scale = Vector2(0.922237, 1.40939)
 script = ExtResource("1_i8p56")
 
 [node name="ScoreArea" type="Area2D" parent="."]

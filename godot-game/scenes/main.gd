@@ -1,6 +1,9 @@
 extends Node
 
 @export var pipe_scene : PackedScene
+@onready var sfx_jump: AudioStreamPlayer2D = $sfx_jump
+@onready var sfx_death: AudioStreamPlayer2D = $sfx_death
+@onready var sfx_a: AudioStreamPlayer2D = $sfx_a
 
 var game_running : bool
 var game_over : bool
@@ -10,9 +13,9 @@ const SCROLL_SPEED : int = 4
 var screen_size : Vector2i
 var ground_height : int
 var pipes : Array
-const PIPE_DELAY : int = 500
-const PIPE_RANGE : int = 300
-const PIPE_VERTICAL_OFFSET : int = 180
+const PIPE_DELAY : int = 1100
+const PIPE_RANGE : int = 500
+const PIPE_VERTICAL_OFFSET : int = 500
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
@@ -43,6 +46,7 @@ func _input(event):
 				else:
 					if $Bird.flying:
 						$Bird.flap()
+						sfx_jump.play()
 						check_top()
 
 func start_game():
@@ -81,8 +85,10 @@ func generate_pipes():
 	pipes.append(pipe)
 	
 func scored():
+	sfx_a.play()
 	score += 1
 	$ScoreLabel.text = "SCORE: " + str(score)
+
 
 func check_top():
 	if $Bird.position.y < 0:
@@ -98,10 +104,12 @@ func stop_game():
 	
 func bird_hit():
 	$Bird.falling = true
+	sfx_death.play()
 	stop_game()
 
 func _on_ground_hit():
 	$Bird.falling = false
+	sfx_death.play()
 	stop_game()
 
 func _on_game_over_restart():
