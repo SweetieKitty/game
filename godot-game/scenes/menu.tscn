@@ -1,10 +1,11 @@
-[gd_scene load_steps=6 format=3 uid="uid://ymkyqgiu43at"]
+[gd_scene load_steps=7 format=3 uid="uid://ymkyqgiu43at"]
 
 [ext_resource type="Script" uid="uid://32kq765qjnsm" path="res://scenes/menu.gd" id="1_yqeox"]
-[ext_resource type="Texture2D" uid="uid://cyp2rxsf35oej" path="res://IMG_5607.PNG" id="2_vjb58"]
-[ext_resource type="Texture2D" uid="uid://ckyhiokk02g5d" path="res://IMG_5639.PNG" id="3_4ytvr"]
-[ext_resource type="Texture2D" uid="uid://c521joklq4w81" path="res://IMG_5638.PNG" id="4_g3eks"]
-[ext_resource type="Texture2D" uid="uid://jfq1ngc0j6sb" path="res://IMG_5640.PNG" id="5_v86rl"]
+[ext_resource type="Texture2D" uid="uid://cyp2rxsf35oej" path="res://assets/IMG_5607.PNG" id="2_vjb58"]
+[ext_resource type="Texture2D" uid="uid://bocyqm837pbig" path="res://assets/play.png" id="3_4ytvr"]
+[ext_resource type="Texture2D" uid="uid://dk2wrh6pu2ck1" path="res://assets/settings.png" id="4_g3eks"]
+[ext_resource type="Texture2D" uid="uid://djydrqgae73yk" path="res://assets/exit.png" id="5_v86rl"]
+[ext_resource type="Texture2D" uid="uid://dnb4gs1welq47" path="res://assets/SHOP.png" id="6_g3eks"]
 
 [node name="Control" type="Control"]
 layout_mode = 3
@@ -24,40 +25,42 @@ position = Vector2(546, 954)
 scale = Vector2(1.00741, 1.00625)
 texture = ExtResource("2_vjb58")
 
-[node name="MarginContainer" type="MarginContainer" parent="."]
-layout_mode = 1
-anchors_preset = -1
-anchor_left = 0.226
-anchor_top = 0.422
-anchor_right = 0.827
-anchor_bottom = 0.591
-offset_left = 82.583
-offset_top = -90.53
-offset_right = 896.301
-offset_bottom = 874.835
-grow_horizontal = 2
-grow_vertical = 2
-scale = Vector2(0.292, 0.267)
-
-[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer"]
-layout_mode = 2
-alignment = 1
-
-[node name="Button" type="Button" parent="MarginContainer/VBoxContainer"]
-layout_mode = 2
+[node name="Button" type="Button" parent="Img5607"]
+offset_left = -205.0
+offset_top = -195.0
+offset_right = 1723.0
+offset_bottom = 893.0
+scale = Vector2(0.203, 0.125)
 icon = ExtResource("3_4ytvr")
 flat = true
 
-[node name="Button2" type="Button" parent="MarginContainer/VBoxContainer"]
-layout_mode = 2
+[node name="Button2" type="Button" parent="Img5607"]
+offset_left = -197.0
+offset_top = -105.0
+offset_right = 1731.0
+offset_bottom = 983.0
+scale = Vector2(0.196, 0.141)
 icon = ExtResource("4_g3eks")
 flat = true
 
-[node name="Button3" type="Button" parent="MarginContainer/VBoxContainer"]
-layout_mode = 2
+[node name="Button3" type="Button" parent="Img5607"]
+offset_left = -9.92642
+offset_top = 18.882
+offset_right = 1918.07
+offset_bottom = 1106.88
+scale = Vector2(0.098, 0.1)
 icon = ExtResource("5_v86rl")
 flat = true
 
-[connection signal="pressed" from="MarginContainer/VBoxContainer/Button" to="." method="_on_button_pressed"]
-[connection signal="pressed" from="MarginContainer/VBoxContainer/Button2" to="." method="_on_button_2_pressed"]
-[connection signal="pressed" from="MarginContainer/VBoxContainer/Button3" to="." method="_on_button_3_pressed"]
+[node name="Button4" type="Button" parent="Img5607"]
+offset_left = -204.0
+offset_top = 2.0
+offset_right = 1724.0
+offset_bottom = 1090.0
+scale = Vector2(0.104, 0.133)
+icon = ExtResource("6_g3eks")
+flat = true
+
+[connection signal="pressed" from="Img5607/Button" to="." method="_on_button_pressed"]
+[connection signal="pressed" from="Img5607/Button2" to="." method="_on_button_2_pressed"]
+[connection signal="pressed" from="Img5607/Button3" to="." method="_on_button_3_pressed"]

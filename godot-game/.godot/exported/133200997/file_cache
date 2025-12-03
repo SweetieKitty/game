@@ -1,0 +1,8 @@
+res://scenes/bird.tscn::6f7f7f329c48a75dfa4508c31151a9bd::1764797782::res://.godot/exported/133200997/export-15556b2ffd9f6ec7212a192ec05dd064-bird.scn
+res://scenes/game_over.tscn::81777249bf03e56e26fb3ac99d114daf::1764797782::res://.godot/exported/133200997/export-21b8bee24a2bf9e9929bc898cc82b612-game_over.scn
+res://scenes/ground.tscn::20805c4f584704ce8300b4dc40fec97a::1764620457::res://.godot/exported/133200997/export-dfd9c84b87282d43ebad4fab1fa15f6a-ground.scn
+res://scenes/main.tscn::ef0d79b12be84d3508e1d31ad19c2cd3::1764797782::res://.godot/exported/133200997/export-3ad5c15c4f3250da0cc7c1af1770d85f-main.scn
+res://scenes/menu.tscn::e235708b1011b83ed315038b071321b4::1764797781::res://.godot/exported/133200997/export-1ce5c86e8ca186dcaaeaa8726f1268db-menu.scn
+res://scenes/options_menu.tscn::e5963e5f75578fe32f0246b8d6ff0011::1764797782::res://.godot/exported/133200997/export-3f3f0a55366671792f60b5e27257c793-options_menu.scn
+res://scenes/pipe.tscn::d22bdb82c861b5b72130a6392f4a7c1f::1764797782::res://.godot/exported/133200997/export-1362e1c2809766518435c132fe1832b0-pipe.scn
+res://bg_music.tscn::a305c9f7f3b6ef1349bac8512ad0b72f::1764620457::res://.godot/exported/133200997/export-3ced97cdb8281815ee01ea434e3cac6b-bg_music.scn

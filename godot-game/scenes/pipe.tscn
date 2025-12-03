@@ -1,7 +1,7 @@
 [gd_scene load_steps=5 format=3 uid="uid://cr3pl7yfk32tb"]
 
 [ext_resource type="Script" uid="uid://cc3aheg467tqq" path="res://scenes/pipe.gd" id="1_i8p56"]
-[ext_resource type="Texture2D" uid="uid://q4fwn7vx4dr2" path="res://tt.png" id="3_8p0di"]
+[ext_resource type="Texture2D" uid="uid://q4fwn7vx4dr2" path="res://assets/tt.png" id="3_8p0di"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_51tso"]
 size = Vector2(48.6983, 277.472)
@@ -18,7 +18,6 @@ script = ExtResource("1_i8p56")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="ScoreArea"]
 position = Vector2(158.805, 48.626)
-scale = Vector2(1, 1)
 shape = SubResource("RectangleShape2D_51tso")
 
 [node name="Ttu3" type="Sprite2D" parent="."]

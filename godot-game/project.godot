@@ -10,10 +10,10 @@ config_version=5
 
 [application]
 
-config/name="flappy_bird_tut"
+config/name="OSAMA"
 run/main_scene="uid://ymkyqgiu43at"
 config/features=PackedStringArray("4.4", "Forward Plus")
-config/icon="res://icon.svg"
+config/icon="uid://gpa7rfhjcp1l"
 
 [autoload]
 
