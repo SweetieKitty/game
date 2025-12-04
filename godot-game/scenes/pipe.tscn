@@ -7,7 +7,7 @@
 size = Vector2(48.6983, 277.472)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_arpqm"]
-size = Vector2(344.882, 1058.79)
+size = Vector2(150.738, 1060.12)
 
 [node name="Pipe" type="Area2D" groups=["pipes"]]
 position = Vector2(367, 891)
@@ -33,12 +33,22 @@ scale = Vector2(2.12279, -3.49451)
 texture = ExtResource("3_8p0di")
 
 [node name="CollisionShape2D4" type="CollisionShape2D" parent="."]
-position = Vector2(34.6982, -613.031)
+position = Vector2(-60.7219, -611.612)
+scale = Vector2(1, 0.999999)
+shape = SubResource("RectangleShape2D_arpqm")
+
+[node name="CollisionShape2D6" type="CollisionShape2D" parent="."]
+position = Vector2(136.624, -622.255)
+scale = Vector2(1, 0.999999)
+shape = SubResource("RectangleShape2D_arpqm")
+
+[node name="CollisionShape2D7" type="CollisionShape2D" parent="."]
+position = Vector2(113.854, 713.075)
 scale = Vector2(1, 0.999999)
 shape = SubResource("RectangleShape2D_arpqm")
 
 [node name="CollisionShape2D5" type="CollisionShape2D" parent="."]
-position = Vector2(17.383, 715.292)
+position = Vector2(-79.7061, 723.761)
 scale = Vector2(1, 0.999999)
 shape = SubResource("RectangleShape2D_arpqm")
 

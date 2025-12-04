@@ -1,2 +1,8 @@
+ParallaxBackground
+ParallaxLayer
+TextureRect
+CanvasLayer
+Camera2D
+TextureButton
 VBoxContainer
 Button

@@ -15,14 +15,13 @@ var ground_height : int
 var pipes : Array
 const PIPE_DELAY : int = 700
 const PIPE_RANGE : int = 350
-const PIPE_VERTICAL_OFFSET : int = 500
+const PIPE_VERTICAL_OFFSET : int = 220
 
-# Called when the node enters the scene tree for the first time.
 func _ready():
-	screen_size = get_window().size
+	screen_size = Vector2i(520, 834) 
 	ground_height = $Ground.get_node("Sprite2D").texture.get_height()
 	new_game()
-
+	
 func new_game():
 	#reset variables
 	game_running = false

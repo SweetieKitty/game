@@ -16,7 +16,7 @@ animations = [{
 }]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_3po83"]
-radius = 7.8143
+radius = 6.86712
 height = 25.4959
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_hq4t0"]
@@ -24,8 +24,8 @@ radius = 3.49986
 height = 8.4205
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_twsrt"]
-radius = 3.81871
-height = 7.63742
+radius = 3.09586
+height = 6.19171
 
 [node name="Bird" type="CharacterBody2D"]
 scale = Vector2(2.055, 2.055)
@@ -37,7 +37,7 @@ scale = Vector2(0.145296, 0.5)
 sprite_frames = SubResource("SpriteFrames_3po83")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(29.1655, 0.486618)
+position = Vector2(30.1703, -0.486618)
 rotation = -1.5708
 scale = Vector2(2.055, 2.055)
 shape = SubResource("CapsuleShape2D_3po83")
@@ -47,8 +47,24 @@ position = Vector2(50.5766, 4.37956)
 scale = Vector2(2.055, 2.055)
 shape = SubResource("CapsuleShape2D_hq4t0")
 
+[node name="CollisionShape2D5" type="CollisionShape2D" parent="."]
+position = Vector2(47.6886, 4.86618)
+scale = Vector2(2.055, 2.055)
+shape = SubResource("CapsuleShape2D_hq4t0")
+
+[node name="CollisionShape2D6" type="CollisionShape2D" parent="."]
+position = Vector2(46.2287, -5.3528)
+scale = Vector2(2.055, 2.055)
+shape = SubResource("CapsuleShape2D_hq4t0")
+
 [node name="CollisionShape2D3" type="CollisionShape2D" parent="."]
-position = Vector2(30.1387, 14.7591)
+position = Vector2(32.1168, 15.5718)
+rotation = -1.55509
+scale = Vector2(2.055, 2.055)
+shape = SubResource("CapsuleShape2D_twsrt")
+
+[node name="CollisionShape2D4" type="CollisionShape2D" parent="."]
+position = Vector2(30.6569, 15.5718)
 rotation = -1.55509
 scale = Vector2(2.055, 2.055)
 shape = SubResource("CapsuleShape2D_twsrt")

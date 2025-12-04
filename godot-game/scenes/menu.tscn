@@ -1,11 +1,15 @@
-[gd_scene load_steps=7 format=3 uid="uid://ymkyqgiu43at"]
+[gd_scene load_steps=11 format=3 uid="uid://ymkyqgiu43at"]
 
 [ext_resource type="Script" uid="uid://32kq765qjnsm" path="res://scenes/menu.gd" id="1_yqeox"]
 [ext_resource type="Texture2D" uid="uid://cyp2rxsf35oej" path="res://assets/IMG_5607.PNG" id="2_vjb58"]
 [ext_resource type="Texture2D" uid="uid://bocyqm837pbig" path="res://assets/play.png" id="3_4ytvr"]
 [ext_resource type="Texture2D" uid="uid://dk2wrh6pu2ck1" path="res://assets/settings.png" id="4_g3eks"]
+[ext_resource type="Script" uid="uid://bro6xfqufqbnc" path="res://scenes/button.gd" id="4_v86rl"]
 [ext_resource type="Texture2D" uid="uid://djydrqgae73yk" path="res://assets/exit.png" id="5_v86rl"]
+[ext_resource type="Script" uid="uid://dbdvm73gsodoj" path="res://scenes/button_2.gd" id="6_13sgg"]
 [ext_resource type="Texture2D" uid="uid://dnb4gs1welq47" path="res://assets/SHOP.png" id="6_g3eks"]
+[ext_resource type="Script" uid="uid://djcgefxcl4ufh" path="res://scenes/button_3.gd" id="8_i6lef"]
+[ext_resource type="Script" uid="uid://citpukltek5lp" path="res://scenes/button_4.gd" id="10_70i5f"]
 
 [node name="Control" type="Control"]
 layout_mode = 3
@@ -25,42 +29,42 @@ position = Vector2(546, 954)
 scale = Vector2(1.00741, 1.00625)
 texture = ExtResource("2_vjb58")
 
-[node name="Button" type="Button" parent="Img5607"]
-offset_left = -205.0
-offset_top = -195.0
-offset_right = 1723.0
-offset_bottom = 893.0
+[node name="PlayButton" type="TextureButton" parent="."]
+offset_left = 343.0
+offset_top = 758.0
+offset_right = 2271.0
+offset_bottom = 1838.0
 scale = Vector2(0.203, 0.125)
-icon = ExtResource("3_4ytvr")
-flat = true
+texture_normal = ExtResource("3_4ytvr")
+script = ExtResource("4_v86rl")
 
-[node name="Button2" type="Button" parent="Img5607"]
-offset_left = -197.0
-offset_top = -105.0
-offset_right = 1731.0
-offset_bottom = 983.0
+[node name="SettingsButton" type="TextureButton" parent="."]
+offset_left = 350.0
+offset_top = 848.0
+offset_right = 2278.0
+offset_bottom = 1936.0
 scale = Vector2(0.196, 0.141)
-icon = ExtResource("4_g3eks")
-flat = true
+texture_normal = ExtResource("4_g3eks")
+script = ExtResource("6_13sgg")
 
-[node name="Button3" type="Button" parent="Img5607"]
-offset_left = -9.92642
-offset_top = 18.882
-offset_right = 1918.07
-offset_bottom = 1106.88
+[node name="ExitButton" type="TextureButton" parent="."]
+offset_left = 536.0
+offset_top = 973.0
+offset_right = 2464.0
+offset_bottom = 2061.0
 scale = Vector2(0.098, 0.1)
-icon = ExtResource("5_v86rl")
-flat = true
+texture_normal = ExtResource("5_v86rl")
+script = ExtResource("8_i6lef")
 
-[node name="Button4" type="Button" parent="Img5607"]
-offset_left = -204.0
-offset_top = 2.0
-offset_right = 1724.0
-offset_bottom = 1090.0
+[node name="ShopButton" type="TextureButton" parent="."]
+offset_left = 340.488
+offset_top = 956.013
+offset_right = 2268.49
+offset_bottom = 2044.01
 scale = Vector2(0.104, 0.133)
-icon = ExtResource("6_g3eks")
-flat = true
+texture_normal = ExtResource("6_g3eks")
+script = ExtResource("10_70i5f")
 
-[connection signal="pressed" from="Img5607/Button" to="." method="_on_button_pressed"]
-[connection signal="pressed" from="Img5607/Button2" to="." method="_on_button_2_pressed"]
-[connection signal="pressed" from="Img5607/Button3" to="." method="_on_button_3_pressed"]
+[connection signal="pressed" from="PlayButton" to="." method="_on_button_pressed"]
+[connection signal="pressed" from="SettingsButton" to="." method="_on_button_2_pressed"]
+[connection signal="pressed" from="ExitButton" to="." method="_on_button_3_pressed"]

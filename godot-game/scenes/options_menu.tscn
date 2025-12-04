@@ -1,9 +1,11 @@
-[gd_scene load_steps=5 format=3 uid="uid://cklt3765il0hy"]
+[gd_scene load_steps=7 format=3 uid="uid://cklt3765il0hy"]
 
 [ext_resource type="Script" uid="uid://cgssx77j5rujp" path="res://scenes/options_menu.gd" id="1_ijpji"]
 [ext_resource type="Texture2D" uid="uid://cyp2rxsf35oej" path="res://assets/IMG_5607.PNG" id="2_dhn0l"]
 [ext_resource type="Texture2D" uid="uid://dqglldsd5dn0t" path="res://assets/VOLUME.png" id="3_lfjc7"]
 [ext_resource type="Texture2D" uid="uid://bxdjixde0mudb" path="res://assets/BACK.png" id="4_3xsyx"]
+[ext_resource type="Script" uid="uid://cww0kpr7xfvvm" path="res://scenes/volume_button.gd" id="4_dhn0l"]
+[ext_resource type="Script" uid="uid://bom6uvidlxffv" path="res://scenes/back_button.gd" id="6_dhn0l"]
 
 [node name="Control" type="Control"]
 layout_mode = 3
@@ -23,22 +25,22 @@ position = Vector2(546, 954)
 scale = Vector2(1.00741, 1.00625)
 texture = ExtResource("2_dhn0l")
 
-[node name="Button" type="Button" parent="Img5607"]
-offset_left = -193.566
-offset_top = -212.671
-offset_right = 1734.43
-offset_bottom = 1989.33
+[node name="VolumeButton" type="TextureButton" parent="Img5607"]
+offset_left = -192.573
+offset_top = -154.037
+offset_right = 1735.42
+offset_bottom = 2047.96
 scale = Vector2(0.193, 0.104)
-icon = ExtResource("3_lfjc7")
-flat = true
+texture_normal = ExtResource("3_lfjc7")
+script = ExtResource("4_dhn0l")
 
-[node name="Button2" type="Button" parent="Img5607"]
+[node name="BackButton" type="TextureButton" parent="Img5607"]
 offset_left = -204.485
-offset_top = -44.7205
-offset_right = 1765.52
-offset_bottom = 1043.28
-scale = Vector2(0.203, 0.103)
-icon = ExtResource("4_3xsyx")
-flat = true
+offset_top = -37.764
+offset_right = 1715.52
+offset_bottom = 1050.24
+scale = Vector2(0.204, 0.103)
+texture_normal = ExtResource("4_3xsyx")
+script = ExtResource("6_dhn0l")
 
-[connection signal="pressed" from="Img5607/Button2" to="." method="_on_button_2_pressed"]
+[connection signal="pressed" from="Img5607/BackButton" to="." method="_on_button_2_pressed"]

@@ -25,8 +25,9 @@ position = Vector2(13.065, 800)
 
 [node name="Ground" parent="." instance=ExtResource("5_choun")]
 z_index = 1
-position = Vector2(-184, 1735)
-scale = Vector2(3.845, 2.465)
+texture_repeat = 2
+position = Vector2(-5383, 1795)
+scale = Vector2(3.74, 3.74)
 
 [node name="PipeTimer" type="Timer" parent="."]
 wait_time = 2.68
